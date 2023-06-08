@@ -273,7 +273,7 @@ text = r'''
 text2=''''''
 for line in text.splitlines():
     if "RandomCodeReplace" in line:
-        # 生成一个长度为 10 的随机字符串
+        # 生成一个长度为 30 的随机字符串
         random_string = generate_random_string(30)
         line = line.replace(r"RandomCodeReplace", random_string)
         text2 = text2+line+'\n'
